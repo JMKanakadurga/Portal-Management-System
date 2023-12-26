@@ -1,0 +1,54 @@
+
+  <header class="header">
+    <h1 class="logo"><a href="#">EMPLOYEE PORTAL MANAGEMENT</a></h1>
+  <!--<ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a (click)="prof()">Profile</a></li>
+      <li><a (click)="fin()">Finance</a></li>
+      <li><a (click)="log()">Login</a></li>
+  </ul>-->
+</header> 
+<h2>Leave Data </h2> 
+
+
+    <div id="grid">
+        <table class="table">
+          <thead class="table__header">
+            <tr class="table__row">
+              <th class="table__cell1 ">Employee Number</th>
+              <th class="table__cell1 ">SubType</th>
+              <th class="table__cell1 ">Valid End</th>
+              <th class="table__cell1 ">Valid Begin</th>
+              <th class="table__cell1 ">Absence Type</th>
+              <th class="table__cell1 ">Absence Type Name</th>
+              <th class="table__cell1 ">Absent days</th>
+              <th class="table__cell1 ">Absence Hours</th>
+            </tr>
+          </thead>
+      
+          <tbody>
+      
+      
+          
+      
+            <tr *ngFor="let ppl of data" class="table__row">
+                <td class="table__cell"><div class = "scroll" >{{ppl.EMPLOYEENO}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.SUBTYPE}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.VALIDEND}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.VALIDBEGIN}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.ABSENCETYPE}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.NAMEOFABSENCETYPE}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.ABSENCEDAYS}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.ABSENCEHOURS}}</div></td>
+            </tr>
+          
+           
+        </tbody>
+         
+        </table>
+        </div>
+        <div class="back">
+          <button class="bottom" (click)="goback()">Go Back</button>
+        </div>
+
+

@@ -1,0 +1,104 @@
+
+
+<body>
+    <article class="cssui-usercard" >
+      <div class="cssui-usercard__body">
+        <!--Header-->
+        <header class="cssui-usercard__header">
+          <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/11_avatar-512.png" class="cssui-usercard__avatar" alt="Avatar">
+          <div class="cssui-usercard__header-info">
+            <h3 class="cssui-usercard__name">{{ppl.ENAME}}</h3>
+            <span class="cssui-usercard__post">{{ppl.ORGEH_TXT}}</span>
+          </div>
+        </header>
+    
+    
+        <div class="cssui-usercard__content">
+          <div class="cssui-slider">
+            <!-- the control elements of slider -->
+            <input id="slide1" type="radio" class="cssui-slider__switch cssui-usercard__switch" name="slider-controls" checked autofocus>
+            <label for="slide1" class="cssui-slider__control cssui-usercard__control"></label>
+            <input id="slide2" type="radio" class="cssui-slider__switch cssui-usercard__switch" name="slider-controls">
+            <label for="slide2" class="cssui-slider__control cssui-usercard__control"></label>
+    
+            <div class="cssui-slider__slides">
+    
+              <!-- first slide -->
+    
+              <div class="cssui-slider__slide">
+              
+                <div class="cssui-usercard__stats">
+                  <div class="cssui-stats cssui-usercard__stats-item">
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">Personnel Number</span>
+                      <span class="cssui-stats__value">{{ppl.PERNR}}</span>
+                    </div>
+                  </div>
+    
+                  <div class="cssui-stats cssui-usercard__stats-item">
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">Joining Date</span>
+                      <span class="cssui-stats__value">{{ppl.BEGDA}}</span>
+                    </div>
+                  </div>
+    
+                  <div class="cssui-stats cssui-usercard__stats-item">
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">Designation</span>
+                      <span class="cssui-stats__value">{{ppl.PLANS_TXT}}</span>
+                    </div>
+                  </div>
+    
+                  <div class="cssui-stats cssui-usercard__stats-item">
+                   
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">Date of Birth</span>
+                      <span class="cssui-stats__value">{{ppl.GBDAT}}</span>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+    
+    
+              <div class="cssui-slider__slide">
+              
+                <div class="cssui-usercard__stats">
+                  <div class="cssui-stats cssui-usercard__stats-item">
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">Address</span>
+                      <a href="#0" class="cssui-stats__value">{{ppl.STRAS}}</a>
+                    </div>
+                  </div>
+                  <div class="cssui-stats cssui-usercard__stats-item">
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">City</span>
+                      <a href="tel:79000000000" class="cssui-stats__value">{{ppl.ORT01}}</a>
+                    </div>
+                  </div>
+                  <div class="cssui-stats cssui-usercard__stats-item">
+                   
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">PINCODE</span>
+                      <span class="cssui-stats__value">{{ppl.PSTLZ}}</span>
+                    </div>
+                  </div>
+                  <div class="cssui-stats cssui-usercard__stats-item">
+          
+                    <div class="cssui-stats__info cssui-usercard__stats-info">
+                      <span class="cssui-stats__name cssui-usercard__stats-name">Mobile</span>
+                      <span class="cssui-stats__value">{{ppl.TELNR}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+
+  </body>
+

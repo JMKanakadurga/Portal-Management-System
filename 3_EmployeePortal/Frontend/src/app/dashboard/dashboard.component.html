@@ -1,0 +1,65 @@
+<html>
+    <header>
+        <div class="container">
+          <h1 id="logo">Employee Management Portal</h1>
+        </div>
+      </header>
+  <body>
+    <div class="new">
+        <img src="https://www.bizmerlin.com/wp-content/uploads/2021/05/Centralized-Employee-Records-1200x861.png" >
+    </div>
+    <div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="https://jbfarrow.com">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                           Home
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a (click)="emprof()">
+                        <i class="fa fa-user"></i>
+                        <span class="nav-text">
+                            Profile
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a (click)="leave()">
+                       <i class="fa fa-comments fa-2x"></i>
+                        <span class="nav-text">
+                            Leave Managemnt
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a (click)="pay()">
+                       <i class="fa fa-clipboard"></i>
+                        <span class="nav-text">
+                            Payslip
+                        </span>
+                    </a>
+                   
+                </li>
+             
+               
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a (click)="logout()">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+  </body>
+    </html>

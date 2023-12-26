@@ -1,0 +1,53 @@
+
+<header class="header">
+    <h1 class="logo"><a href="#">PAYSLIP</a></h1>
+    <!--<button class="btn button-34 m-4" (click)="ExportPDF()">Download PaySlip</button>-->
+  
+</header> 
+
+
+
+<div class = "flex">
+    
+    <button class="button button2" (click)="convertToPDF()">Download pdf</button>
+    </div>
+        <div id="grid">
+            <table class="table">
+              <thead class="table__header">
+                <tr class="table__row">
+                  <th class="table__cell1 ">Sequence number</th>
+                  <th class="table__cell1 ">For-period</th>
+                  <th class="table__cell1 ">Date</th>
+                  <th class="table__cell1 ">End of payroll</th>
+                  <th class="table__cell1 ">BonusDate</th>
+                  <th class="table__cell1 ">Payment date </th>
+                  <th class="table__cell1 ">Pay Type</th>
+                  
+                </tr>
+              </thead>
+          
+              <tbody>
+          
+          
+              
+          
+                <tr *ngFor="let ppl of data" class="table__row">
+                    <td class="table__cell"><div class = "scroll" >{{ppl.SEQUENCENUMBER}}</div></td>
+                    <td class="table__cell"><div class = "scroll" >{{ppl.FPPERIOD}}</div></td>
+                    <td class="table__cell"><div class = "scroll" >{{ppl.FPBEGIN}}</div></td>
+                    <td class="table__cell"><div class = "scroll" >{{ppl.FPEND}}</div></td>
+                    <td class="table__cell"><div class = "scroll" >{{ppl.BONUSDATE}}</div></td>
+                    <td class="table__cell"><div class = "scroll" >{{ppl.PAYDATE}}</div></td>
+                    <td class="table__cell"><div class = "scroll" >{{ppl.PAYTYPE_TEXT}}</div></td>
+                    
+                </tr>
+              
+               
+            </tbody>
+             
+            </table>
+            </div>
+            <div class="back">
+              <button class="bottom" (click)="goback()">Go Back</button>
+            </div>
+         
