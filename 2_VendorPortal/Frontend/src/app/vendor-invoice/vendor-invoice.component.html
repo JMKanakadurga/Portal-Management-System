@@ -1,0 +1,53 @@
+<header class="header">
+    <h1 class="logo"><a href="#">VENDOR MANAGEMENT</a></h1>
+  <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a (click)="prof()">Profile</a></li>
+      <li><a (click)="fin()">Finance</a></li>
+      
+  </ul>
+</header>
+
+<!--<div class = "flex">
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+</div>-->
+
+<h2>Invoice Data</h2>
+    <div id="grid">
+        <table class="table">
+          <thead class="table__header">
+            <tr class="table__row">
+              <th class="table__cell1 ">Client Field</th>
+              <th class="table__cell1 ">Purchasing Structure</th>
+              <th class="table__cell1 ">Accounting Document</th>
+              <th class="table__cell1 ">Posting Key</th>
+              <th class="table__cell1 ">Credit/Debit</th>
+              <th class="table__cell1 ">Amount in local currency</th>
+              <th class="table__cell1 ">Amount in document currency</th>
+              <th class="table__cell1 ">Assignment number</th>
+             
+            </tr>
+          </thead>
+      
+          <tbody>
+            <tr *ngFor="let ppl of data" class="table__row">
+                <td class="table__cell"><div class = "scroll" >{{ppl.MANDT}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.BELNR}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.BUZEI}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.BSCHL}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.SHKZG}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.DMBTR}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.WRBTR}}</div></td>
+                
+                <td class="table__cell"><div class = "scroll" >{{ppl.ZUONR}}</div></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="back">
+          <button class="bottom" (click)="goback()">Go Back</button>
+    </div>
+
+
+

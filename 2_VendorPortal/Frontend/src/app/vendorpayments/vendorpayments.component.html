@@ -1,0 +1,86 @@
+<header class="header">
+  <h1 class="logo"><a href="#">VENDOR MANAGEMENT</a></h1>
+<ul class="main-nav">
+    <li><a href="#">Home</a></li>
+    <li><a (click)="prof()">Profile</a></li>
+    <li><a (click)="fin()">Finance</a></li>
+
+</ul>
+</header>
+
+<!--<div class = "flex">
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+</div>-->
+
+<h2>Vendor Payments Details</h2>
+  <div id="grid">
+      <table class="table">
+        <thead class="table__header">
+          <tr class="table__row">
+            <th class="table__cell1 ">Company Code</th>
+            <th class="table__cell1 ">Purchasing Structure</th>
+            <th class="table__cell1 ">Fiscal Year</th>
+            <th class="table__cell1 ">Posting Key</th>
+            <th class="table__cell1 ">Amount in local currency</th>
+            <th class="table__cell1 ">Amount in document currency</th>
+            <th class="table__cell1 ">Currency</th>
+            <th class="table__cell1 ">Assignment number</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+          <tr *ngFor="let ppl of data" class="table__row">
+              <td class="table__cell"><div class = "scroll" >{{ppl.BUKRS}}</div></td>
+              <td class="table__cell"><div class = "scroll" >{{ppl.BELNR}}</div></td>
+              <td class="table__cell"><div class = "scroll" >{{ppl.GJAHR}}</div></td>
+              <td class="table__cell"><div class = "scroll" >{{ppl.BSCHL}}</div></td>
+              <td class="table__cell"><div class = "scroll" >{{ppl.DMBTR}}</div></td>
+              <td class="table__cell"><div class = "scroll" >{{ppl.WRBTR}}</div></td>
+              <td class="table__cell"><div class = "scroll" >{{ppl.PSWSL}}</div></td>
+              <td class="table__cell"><div class = "scroll" >{{ppl.ZUONR}}</div></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="back">
+        <button class="bottom" (click)="goback()">Go Back</button>
+  </div>
+
+
+
+<!--<div class="topContainer">
+    <div class="container">
+      <table>
+       <thead>
+        <tr>
+          <th>COMP_CODE</th>
+          <th>CLR_DOC_NO</th>
+          <th>ALLOC_NMBR</th>
+          <th>FISC_YEAR</th>
+          <th>DOC_NO</th>
+          <th>PSTNG_DATE</th>
+          <th>DOC_DATE</th>
+          <th>NET_AMOUNT</th>
+          <th>AMOUNT</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let ppl of data">
+              <td>{{ppl.BUKRS}}</td>
+              <td>{{ppl.BELNR}}</td>
+              <td>{{ppl.GJAHR}}</td>
+              <td>{{ppl.BSCHL}}</td>
+              <td>{{ppl.DMBTR}}</td>
+              <td>{{ppl.WRBTR}}</td>
+              <td>{{ppl.PSWBT}}</td>
+              <td>{{ppl.PSWSL}}</td>
+              <td>{{ppl.ZUONR}}</td>
+             
+            </tr>
+      </tbody>
+  
+    </table>
+  </div>-->
+  
+

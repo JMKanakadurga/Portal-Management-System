@@ -1,0 +1,89 @@
+<!--<div class="topContainer">
+    <div class="container">
+      <table>
+       <thead>
+        <tr>
+          <th>COMP_CODE</th>
+          <th>CLR_DOC_NO</th>
+          <th>ALLOC_NMBR</th>
+          <th>FISC_YEAR</th>
+          <th>DOC_NO</th>
+          <th>PSTNG_DATE</th>
+          <th>DOC_DATE</th>
+          <th>NET_AMOUNT</th>
+          <th>AMOUNT</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let ppl of data">
+              <td>{{ppl.PO_NUMBER}}</td>
+              <td>{{ppl.PO_ITEM}}</td>
+              <td>{{ppl.MATERIAL}}</td>
+              <td>{{ppl.PUR_MAT}}</td>
+              <td>{{ppl.QUANTITY}}</td>
+              <td>{{ppl.INFO_REC}}</td>
+              <td>{{ppl.UNDER_TOL}}</td>
+              <td>{{ppl.NET_PRICE}}</td>
+              <td>{{ppl.NET_VALUE}}</td>
+            </tr>
+      </tbody>
+  
+    </table>
+  </div>-->
+  <header class="header">
+    <h1 class="logo"><a href="#">VENDOR MANAGEMENT</a></h1>
+  <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a (click)="prof()">Profile</a></li>
+      <li><a (click)="fin()">Finance</a></li>
+      
+  </ul>
+</header>  
+<h2>Purchase Order Data</h2>
+<div id="grid">
+  <table class="table">
+          <thead class="table__header">
+            <tr class="table__row">
+              <th class="table__cell1 ">Purchasing Order Number</th>
+              <th class="table__cell1 ">PurchaseOrder Item Group</th>
+              <th class="table__cell1 ">Material</th>
+              <th class="table__cell1 ">Material Number</th>
+              <th class="table__cell1 ">Material Group</th>
+              <th class="table__cell1 ">Quotation Deadline</th>
+              
+              <th class="table__cell1 ">Quantity</th>
+              <th class="table__cell1 ">Gross Value</th>
+              <th class="table__cell1 ">Net Price</th>
+              <th class="table__cell1 ">Net Value</th>
+            </tr>
+          </thead>
+      
+          <tbody>
+      
+      
+          
+      
+            <tr *ngFor="let ppl of data" class="table__row">
+                <td class="table__cell"><div class = "scroll" >{{ppl.PO_NUMBER}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.PO_ITEM}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.MATERIAL}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.PUR_MAT}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.MAT_GRP}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.QUOT_DEAD}}</div></td>
+               
+                <td class="table__cell"><div class = "scroll" >{{ppl.QUANTITY}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.GROS_VALUE}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.NET_PRICE}}</div></td>
+                <td class="table__cell"><div class = "scroll" >{{ppl.NET_VALUE}}</div></td>
+            </tr>
+          
+           
+        </tbody>
+         
+        </table>
+        </div>
+        <div class="back">
+          <button class="bottom" (click)="goback()">Go Back</button>
+        </div>
+
+
