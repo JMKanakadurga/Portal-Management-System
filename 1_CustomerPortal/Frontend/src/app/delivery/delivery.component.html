@@ -1,0 +1,97 @@
+<header>
+  <div class="container">
+    <h1 id="logo">Customer Management Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<h2>List of Delivery</h2>
+<div id="grid">
+  <table class="table">
+    <thead class="table__header">
+      <tr class="table__row">
+        <th class="table__cell1 ">Sales Document</th>
+        <th class="table__cell1 ">Entry Time</th>
+        <th class="table__cell1 ">Date of Record</th>
+        <th class="table__cell1 ">Sales Organization</th>
+        <th class="table__cell1 ">Delivery Date</th>
+        <th class="table__cell1 ">Incoterms</th>
+        <th class="table__cell1 ">Sales Order Item</th>
+        <th class="table__cell1 ">Delivery Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ppl of data" class="table__row">
+        <td class="table__cell"><div class = "scroll" >{{ppl.VBELN}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.ERZET}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.ERDAT}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.VKORG}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.LFDAT_V}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.INCO2}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.ARKTX}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.LFUHR}}</div></td>
+
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="back">
+  <button class="bottom" (click)="goback()">Go Back</button>
+</div>
+
+
+<!--<div class="topContainer">
+    <div class="container">
+      <table>
+       <thead>
+        <tr>
+          <th>SALES_DOC</th>
+          <th>ENTRY_TIME</th>
+          <th>DATE</th>
+          <th>SALES_ORG</th>
+          <th>DELIVERY_DATE</th>
+          <th>INORDER</th>
+          <th>SALES ORDER ITEM</th>
+          <th>DELIVERY TIME</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let ppl of data">
+              <td>{{ppl.VBELN}}</td>
+              <td>{{ppl.ERZET}}</td>
+              <td>{{ppl.ERDAT}}</td>
+              <td>{{ppl.VKORG}}</td>
+              <td>{{ppl.LFDAT_V}}</td>
+              <td>{{ppl.INCO2}}</td>
+              <td>{{ppl.ARKTX}}</td>
+              <td>{{ppl.LFUHR}}</td>
+            </tr>
+      </tbody>
+  
+    </table>
+  </div>
+  
+    
+  
+     
+   
+  
+  
+  
+  
+  
+  
+  </div>-->
+    
+    

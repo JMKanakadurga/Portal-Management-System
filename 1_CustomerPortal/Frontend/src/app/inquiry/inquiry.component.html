@@ -1,0 +1,102 @@
+<header>
+  <div class="container">
+    <h1 id="logo">Customer Management Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<h2>Inquiry Data</h2>
+<div id="grid">
+  <table class="table">
+    <thead class="table__header">
+      <tr class="table__row">
+        <th class="table__cell1 ">Sales Document</th>
+        <th class="table__cell1 ">Date of Record</th>
+        <th class="table__cell1 ">Entry Time</th>
+        <th class="table__cell1 ">Document Date</th>
+        <th class="table__cell1 ">Document Category</th>
+        <th class="table__cell1 ">Transaction Group</th>
+        <th class="table__cell1 ">Document Type</th>
+        <th class="table__cell1 ">Sales Organization</th>
+        <th class="table__cell1 ">Net Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ppl of data" class="table__row">
+        <td class="table__cell"><div class = "scroll" >{{ppl.VBELN}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.ERDAT}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.ERZET}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.AUDAT}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.VBTYP}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.TRVOG}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.AUART}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.VKORG}}</div></td>
+
+        <td class="table__cell"><div class = "scroll" >{{ppl.NETWR}}</div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="back">
+  <button class="bottom" (click)="goback()">Go Back</button>
+</div>
+
+
+
+
+
+<!--<div class="topContainer">
+  <div class="container">
+    <table>
+     <thead>
+      <tr>
+        <th>SALES_DOC</th>
+        <th>DATE</th>
+        <th>ENTRY_TIME</th>
+        <th>DOC_DATE</th>
+        <th>DOC_CATEGORY</th>
+        <th>TRANSACTION</th>
+        <th>DOC_TYPE</th>
+        <th>SALES_ORG</th>
+        <th>NET_VALUE</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ppl of data">
+            <td>{{ppl.VBELN}}</td>
+            <td>{{ppl.ERDAT}}</td>
+            <td>{{ppl.ERZET}}</td>
+            <td>{{ppl.AUDAT}}</td>
+            <td>{{ppl.VBTYP}}</td>
+            <td>{{ppl.TRVOG}}</td>
+            <td>{{ppl.AUART}}</td>
+            <td>{{ppl.VKORG}}</td>
+            <td>{{ppl.NETWR}}</td>
+          </tr>
+    </tbody>
+
+  </table>
+</div>-->
+
+  
+
+   
+ 
+
+
+
+
+
+
+
+  

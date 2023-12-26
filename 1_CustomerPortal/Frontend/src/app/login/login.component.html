@@ -1,0 +1,33 @@
+<div class="Main-container">
+	<div class="container-login">
+		<div class="wrap-login">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+			<div class="login-pic">
+				<img src="https://hamdtechnologies.biz/wp-content/uploads/zoho-customer-portal.png" >
+			</div>
+
+			<form class="login-form">
+				<span class="login-form-title">Get Started</span>
+				<div class="wrap-input">
+					<input type="text" class="input" name="email" placeholder="Customer ID" required #userid>
+					<span class="focus-input"></span>
+					<span class="symbol-input">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="wrap-input">
+					<input type="password" class="input" name="pass" placeholder="Password" required #password>
+					<span class="focus-input"></span>
+					<span class="symbol-input">
+						<i class="fa fa-lock" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="login-form-btn-container">
+					<button class="login-form-btn" (click)="onSubmit(userid.value,password.value)">Login</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+</div>

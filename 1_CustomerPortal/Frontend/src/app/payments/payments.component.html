@@ -1,0 +1,91 @@
+<header>
+  <div class="container">
+    <h1 id="logo">Customer Management Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<h2>Customer Memo Details</h2>
+<div id="grid">
+  <table class="table">
+    <thead class="table__header">
+      <tr class="table__row">
+        <th class="table__cell1 ">Company Code</th>
+        <th class="table__cell1 ">Clearing Document Number</th>
+        <th class="table__cell1 ">Allocation Number</th>
+        <th class="table__cell1 ">Fisc Year</th>
+        <th class="table__cell1 ">Document Number</th>
+        <th class="table__cell1 ">Posting Date</th>
+        <th class="table__cell1 ">Document Date</th>
+        <th class="table__cell1 ">Net Amount</th>
+        <th class="table__cell1 ">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ppl of data" class="table__row">
+        <td class="table__cell"><div class = "scroll" >{{ppl.COMP_CODE}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.CLR_DOC_NO}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.ALLOC_NMBR}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.FISC_YEAR}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.DOC_NO}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.PSTNG_DATE}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.DOC_DATE}}</div></td>
+                    
+        <td class="table__cell"><div class = "scroll" >{{ppl.NET_AMOUNT}}</div></td>
+
+        <td class="table__cell"><div class = "scroll" >{{ppl.AMOUNT}}</div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="back">
+  <button class="bottom" (click)="goback()">Go Back</button>
+</div>
+
+
+
+
+<!--<div class="topContainer">
+    <div class="container">
+      <table>
+       <thead>
+        <tr>
+          <th>COMP_CODE</th>
+          <th>CLR_DOC_NO</th>
+          <th>ALLOC_NMBR</th>
+          <th>FISC_YEAR</th>
+          <th>DOC_NO</th>
+          <th>PSTNG_DATE</th>
+          <th>DOC_DATE</th>
+          <th>NET_AMOUNT</th>
+          <th>AMOUNT</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let ppl of data">
+              <td>{{ppl.COMP_CODE}}</td>
+              <td>{{ppl.CLR_DOC_NO}}</td>
+              <td>{{ppl.ALLOC_NMBR}}</td>
+              <td>{{ppl.FISC_YEAR}}</td>
+              <td>{{ppl.DOC_NO}}</td>
+              <td>{{ppl.PSTNG_DATE}}</td>
+              <td>{{ppl.DOC_DATE}}</td>
+              <td>{{ppl.NET_AMOUNT}}</td>
+              <td>{{ppl.AMOUNT}}</td>
+            </tr>
+      </tbody>
+  
+    </table>
+  </div>
+</div>-->
+    
+  

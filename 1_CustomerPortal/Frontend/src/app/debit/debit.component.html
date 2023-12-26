@@ -1,0 +1,50 @@
+<header>
+    <div class="container">
+      <h1 id="logo">Customer Management Portal</h1>
+      <nav>
+        <ul>
+          <button (click)="debit()" class="debit">Credit Details</button>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h2>Customer Memo Details</h2>
+  <div id="grid">
+    <table class="table">
+      <thead class="table__header">
+        <tr class="table__row">
+          <th class="table__cell1 ">Customer Number</th>
+          <th class="table__cell1 ">Material Number</th>
+          <th class="table__cell1 ">Plant ID</th>
+          <th class="table__cell1 ">Quantity</th>
+          <th class="table__cell1 ">Document Number</th>
+          <th class="table__cell1 ">Fiscal Year</th>
+          <th class="table__cell1 ">Line Item</th>
+          <th class="table__cell1 ">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ppl of data" class="table__row">
+          <td class="table__cell"><div class = "scroll" >{{ppl.KUNNR}}</div></td>
+                      
+          <td class="table__cell"><div class = "scroll" >{{ppl.MATNR}}</div></td>
+                      
+          <td class="table__cell"><div class = "scroll" >{{ppl.WERKS}}</div></td>
+                      
+          <td class="table__cell"><div class = "scroll" >{{ppl.MENGE}}</div></td>
+                      
+          <td class="table__cell"><div class = "scroll" >{{ppl.BELNR}}</div></td>
+                      
+          <td class="table__cell"><div class = "scroll" >{{ppl.GJAHR}}</div></td>
+                      
+          <td class="table__cell"><div class = "scroll" >{{ppl.BUZEI}}</div></td>
+                      
+          <td class="table__cell"><div class = "scroll" >{{ppl.DMBTR}}</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="back">
+    <button class="bottom" (click)="goback()">Go Back</button>
+  </div>
+  

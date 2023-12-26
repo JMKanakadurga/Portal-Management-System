@@ -1,0 +1,45 @@
+
+<section class="app">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <aside class="sidebar">
+           <header>
+          Menu
+        </header>
+      <nav class="sidebar-nav">
+   
+        <ul>
+          <li>
+          <a (click)="profile()"><span>Profile</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="">Dashboard</span></a>
+            <ul class="nav-flyout">
+              <li>
+                <a (click)="inquiry()">Inquiry</a>
+              </li>
+              <li>
+                <a (click)="sales()">Sales Order</a>
+              </li>
+              <li>
+                <a (click)="delivery()">List of Delivery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span class="">Financial sheet</span></a>
+            <ul class="nav-flyout">
+              <li>
+                <a (click)="invoice()">Invoice</a>
+              </li>
+              <li>
+                <a (click)="pay()">Payments</a>
+              </li>
+              <li>
+                <a (click)="memo()">Memo</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </section>
